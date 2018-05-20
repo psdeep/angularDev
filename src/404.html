@@ -1,14 +1,28 @@
-<!doctype html>
-<html>
-  <head>
-    <!-- This stores the URL the user was attempting to go to in sessionStorage,
-    and then redirects all 404 responses to the app’s index.html page -->
-    <!-- See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
-    <script>
-      sessionStorage.redirect = location.href;
-    </script>
-    <meta http-equiv="refresh" content="0;URL='https://psdeep.github.io/angularDev'"></meta>
-  </head>
-  <body>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <title>Match your application's title</title>
+
+  <script>
+    // Store the URL the user was trying to access when receiving the 404.
+    sessionStorage.redirect = location.href;
+  </script>
+
+  <!-- Immediately redirect to the base URL so we can use the SPA routing. -->
+  <meta http-equiv="refresh" content="0;URL='https://psdeep.github.io/angularLearn'"></meta>
+</head>
+
+<body>
+<!-- IE required at least 512 bytes of data to show non-default 404. -->
+             
+             
+             
+</body>    
+            
+             
+</body>
+
 </html>
